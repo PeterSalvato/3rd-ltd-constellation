@@ -1,0 +1,18 @@
+title: 3rd Ltd.
+description: The Press | Design Objects & Systems
+url: "https://3rd.ltd"
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+sass:
+  style: compressed
+
+# Snipcart configuration
+snipcart_api_key: "YOUR_PUBLIC_API_KEY_HERE"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/

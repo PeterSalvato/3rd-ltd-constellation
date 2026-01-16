@@ -1,0 +1,13 @@
+- sku: CP-001
+  title: "Chainprinter Poster"
+  price: 45.00
+  description: "18x24 typography specimen poster"
+  image: "/assets/img/products/chainprinter-poster.jpg"
+  url: "/products/chainprinter-poster"
+
+- sku: SD-001
+  title: "System Diagram Print"
+  price: 65.00
+  description: "24x36 architectural diagram"
+  image: "/assets/img/products/system-diagram.jpg"
+  url: "/products/system-diagram-print"

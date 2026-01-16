@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="catalog">
+    {{ content }}
+
+    <div class="product-grid">
+        {% for product in site.data.products %}
+            {% include product-card.html
+               title=product.title
+               price=product.price
+               image=product.image
+               url=product.url %}
+        {% endfor %}
+    </div>
+</div>

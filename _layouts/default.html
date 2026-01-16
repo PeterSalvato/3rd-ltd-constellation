@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+    <!-- Snipcart -->
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="preconnect" href="https://cdn.snipcart.com">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
+</head>
+<body>
+    {% include network-bar.html %}
+
+    <main class="content-wrapper">
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <!-- Snipcart -->
+    <div id="snipcart" data-config-modal-style="side" data-api-key="{{ site.snipcart_api_key }}" hidden></div>
+    <script src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
+</body>
+</html>

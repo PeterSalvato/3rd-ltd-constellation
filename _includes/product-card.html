@@ -1,0 +1,7 @@
+<article class="product-card">
+    <a href="{{ include.url }}">
+        <img src="{{ include.image | relative_url }}" alt="{{ include.title }}">
+        <h3>{{ include.title }}</h3>
+        <p class="price">${{ include.price }}</p>
+    </a>
+</article>

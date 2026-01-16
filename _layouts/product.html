@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<article class="product-detail">
+    <div class="product-images">
+        {% if page.images %}
+            {% for image in page.images %}
+                <img src="{{ image | relative_url }}" alt="{{ page.title }}">
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    <div class="product-info">
+        <h1>{{ page.title }}</h1>
+        <p class="price">${{ page.price }}</p>
+
+        <div class="product-description">
+            {{ content }}
+        </div>
+
+        <button
+            class="snipcart-add-item buy-button"
+            data-item-id="{{ page.sku }}"
+            data-item-price="{{ page.price }}"
+            data-item-url="{{ page.url | absolute_url }}"
+            data-item-description="{{ page.description }}"
+            data-item-image="{{ page.images[0] | absolute_url }}"
+            data-item-name="{{ page.title }}">
+            Add to Cart
+        </button>
+    </div>
+</article>
