@@ -1,7 +1,7 @@
 title: 3rd Ltd.
 description: The Press | Design Objects & Systems
-url: "https://3rd.ltd"
-baseurl: ""
+url: "https://petersalvato.github.io/3rd-ltd-constellation"
+baseurl: "/3rd-ltd-constellation"
 
 markdown: kramdown
 permalink: pretty
